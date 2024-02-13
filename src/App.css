@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(229 229 229);
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0ab680;
+  border-radius: 80px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+h1 {
+  font-family: "sans-serif";
+}
+.mazius {
+  font-family: "Roman Regular";
+}
+.nav_drop * {
+  background-color: transparent;
+}
