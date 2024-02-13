@@ -8,7 +8,7 @@ const HomePage = () => {
     <>
       <Hero />
       <CardStack />
-      <section className="w-full h-[26vw]  flex justify-start">
+      <section className="w-full h-[26vw] mt-20  flex justify-start">
         <div className="h-full w-1/6 flex justify-start items-start">
           <svg
             stroke="black"

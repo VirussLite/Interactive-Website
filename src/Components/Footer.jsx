@@ -37,7 +37,7 @@ const Footer = () => {
     <footer
       data-scroll-container
       data-scroll
-      className="flex flex-col justify-center items-center  max-h-[150vh] gap-32 pt-28 overflow-hidden relative"
+      className="flex flex-col justify-center items-center  max-h-[140vh] gap-32 pt-28 overflow-hidden relative"
     >
       <div className="w-1/2 text-[5.8vw]  text-center leading-none">
         <h1>
@@ -129,10 +129,10 @@ const Footer = () => {
       </div>
       <svg
         data-scroll
-        data-scroll-speed="-.9"
+        data-scroll-speed="-1"
         viewBox="0 0 1254 1254"
         fill="none"
-        className="absolute w-[86%] top-[52%] pointer-events-none"
+        className="absolute w-[86%] top-[30%] pointer-events-none"
       >
         <circle
           cx="627"

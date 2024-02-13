@@ -12,7 +12,7 @@ function App() {
     const scroll = new LocomotiveScroll({
       el: body.current,
       smooth: true,
-      getspeed: true,
+      multiplier: 1.5,
     });
 
     return () => {

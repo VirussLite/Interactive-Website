@@ -10,9 +10,9 @@ const Cards = () => {
 
     gsap.to("#card1,#card2", {
       scrollTrigger: {
-        trigger: ".kk",
-        start: "-140px center",
-        end: "bottom center",
+        trigger: ".kk1",
+        start: "-90px 450px",
+        end: "bottom top",
         scrub: true,
       },
       y: "80px",
@@ -23,19 +23,26 @@ const Cards = () => {
         start: "0px bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
       },
-      y: "85px",
+      y: "86px",
     });
-    gsap.to("#card4,#card5", {
+    gsap.to("#card4", {
       scrollTrigger: {
         trigger: ".kk3",
         start: "-100px center",
         end: "bottom center",
         scrub: true,
-        // markers: true,
       },
-      y: "50px",
+      y: "28px",
+    });
+    gsap.to("#card5", {
+      scrollTrigger: {
+        trigger: ".kk3",
+        start: "-100px center",
+        end: "bottom center",
+        scrub: true,
+      },
+      y: "55px",
     });
   });
 
@@ -62,16 +69,16 @@ const Cards = () => {
         </div>
       </div>
       <section className="flex flex-col w-full">
-        <div className="w-full flex justify-around items-center mb-16vh   kk">
+        <div className="w-full flex justify-around items-center mb-16vh   kk1">
           <div className="w-[55%]  rounded-[50px] overflow-hidden">
             <img
               id="card1"
-              className="scale-[1.2] rounded-[50px] object-cover"
+              className="scale-[1.3] rounded-[50px]"
               src="./1st card/aheading.png"
               alt="an img"
             />
           </div>
-          <div className="w-[28%] h-[20vw] rounded-[50px]  kk">
+          <div className="w-[28%] h-[20vw] rounded-[50px]  kk1">
             <img
               id="card2"
               className="scale-[1.3] w-full h-full rounded-[50px] object-cover"
@@ -81,28 +88,28 @@ const Cards = () => {
           </div>
         </div>
         <div className="w-full my-32  flex  justify-center items-center kk2">
-          <div className="w-[53%] h-[38.5vw] overflow-hidden rounded-[50px] mr-12">
+          <div className="w-[53%] h-[43.5vw] overflow-hidden rounded-[50px] mr-12">
             <img
               id="card3"
-              className="h-full w-full rounded-[50px] object-cover  scale-[1.2]"
+              className="h-full w-full rounded-[50px] object-fit  scale-[1.2]"
               src="./3rd card/qheading.png"
               alt="an img"
             />
           </div>
         </div>
-        <div className="w-full  h-[110vh] mb-28 mt-24  flex justify-around">
-          <div className="w-[33%] h-[28vw] mr-4 rounded-[50px] self-end kk3">
+        <div className="w-full  h-[130vh] mb-28   flex justify-around">
+          <div className="w-[35%] h-[32vw] mr-4 rounded-[50px] self-end kk3 overflow-hidden">
             <img
               id="card4"
-              className="object-cover h-full w-full rounded-[50px] "
+              className="h-full w-full rounded-[50px] scale-[1.05]"
               src="./4th card/mheading.png"
               alt="an img"
             />
           </div>
-          <div className="w-[44%] h-[33vw] rounded-[50px] kk3">
+          <div className="w-[54%] h-[45vw] overflow-hidden rounded-[50px] kk3 ">
             <img
               id="card5"
-              className="object-cover w-full h-full rounded-[50px]"
+              className="w-full h-full rounded-[50px] scale-[1.15]"
               src="./5th card/vheading.png"
               alt="an img"
             />
