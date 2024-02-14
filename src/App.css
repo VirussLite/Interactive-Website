@@ -23,3 +23,7 @@ h1 {
 .nav_drop * {
   background-color: transparent;
 }
+.scroll {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}

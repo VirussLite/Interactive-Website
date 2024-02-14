@@ -17,10 +17,10 @@ const Hero = () => {
 
   return (
     <section className="h-[90vh] relative">
-      <div className="flex items-center  justify-evenly">
+      <div data-scroll-container className="flex items-center  justify-evenly">
         <h1
           data-scroll
-          data-scroll-speed=".3"
+          data-scroll-speed=".5"
           className="text-[15vw] pl-4 bg-transparent"
         >
           Creative
@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="text-[9vw]">
             <p
               data-scroll
-              data-scroll-speed=".1"
+              data-scroll-speed=".2"
               className="text-[#14CF93] skew-x-[-20deg]"
             >
               visual
@@ -48,7 +48,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="leading-none">
-          <h1 data-scroll data-scroll-speed=".2" className="text-[15vw]">
+          <h1
+            data-scroll
+            data-scroll-speed=".4"
+            className="text-[15vw] bg-transparent"
+          >
             Designer
           </h1>
         </div>

@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import HomePage from "./Pages/HomePage";
 import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
+import "./locomotive.css";
 
 function App() {
   const body = useRef();

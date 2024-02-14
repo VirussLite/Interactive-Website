@@ -9,7 +9,7 @@ const CardStack = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".kk",
+        trigger: ".cardStackContainer",
         start: "-500px top",
         end: "bottom top",
         scrub: true,
@@ -45,11 +45,26 @@ const CardStack = () => {
         },
         "a"
       );
+
+    const tl1 = gsap.timeline();
+
+    tl1.to(".cardStackContainer h2", {
+      scrollTrigger: {
+        trigger: ".cardStackContainer",
+        start: "-400px top",
+        end: "top top",
+        scrub: true,
+        markers: true,
+      },
+      opacity: 1,
+      x: "-20px",
+      scale: 1,
+    });
   });
   return (
-    <section className="w-full  relative kk">
-      <div className="w-full text-4xl tracking-tighter p-20">
-        <h2>
+    <section className="w-full  relative cardStackContainer">
+      <div className="w-full text-4xl tracking-tighter p-20 ">
+        <h2 className="opacity-0 scale-[.8]">
           I AM ABHINAV, I<br />
           CREATE
           <br /> <span className="italic text-[#14CF93] ">Unconventional </span>
