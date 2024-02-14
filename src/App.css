@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: rgb(229 229 229);
-  background-color: black;
+  color: rgb(247, 247, 247);
+  /* background-color: #bababa; */
+  /* background-blend-mode: difference; */
 }
 
 ::-webkit-scrollbar {
-  background-color: black;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #0ab680;
-  border-radius: 80px;
+  display: none;
 }
 
+nav {
+  mix-blend-mode: difference;
+  backdrop-filter: saturate(35%) blur(4px);
+  border: 2px solid transparent;
+}
 h1 {
   font-family: "sans-serif";
 }
@@ -27,3 +29,6 @@ h1 {
   opacity: 1;
   transition: all 1s ease-in-out;
 }
+/* section * {
+  background-color: transparent;
+} */

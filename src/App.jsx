@@ -5,6 +5,9 @@ import HomePage from "./Pages/HomePage";
 import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "./locomotive.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 function App() {
   const body = useRef();
@@ -21,10 +24,46 @@ function App() {
     };
   });
 
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hello",
+        start: "top top",
+        end: "bottom center",
+        scrub: true,
+        // markers: true,
+      },
+    });
+
+    tl.to(".hello", {
+      backgroundColor: "black",
+    });
+    tl.to(".hello", {
+      backgroundColor: "black",
+    });
+    tl.to(".hello", {
+      backgroundColor: "white",
+    });
+
+    tl.to(".hello", {
+      backgroundColor: "white",
+    });
+
+    tl.to(".hello", {
+      backgroundColor: "#131313",
+    });
+  });
+
   return (
     <main ref={body}>
       <Navbar />
-      <div data-scroll data-scroll-container className="pt-28 mx-16 relative">
+      <div
+        data-scroll
+        data-scroll-container
+        className="pt-28 px-16 relative hello bg-black"
+      >
         <HomePage />
         <svg
           data-scroll
@@ -32,7 +71,7 @@ function App() {
           viewBox="0 0 1254 1254"
           fill="none"
           className="absolute top-[3%]  left-[4%] pointer-events-none"
-          style={{ backgroundColor: "transparent" }}
+          // style={{ backgroundColor: "transparent" }}
         >
           <circle
             cx="627"
@@ -50,7 +89,7 @@ function App() {
               gradientTransform="translate(627) rotate(90) scale(813)"
             >
               {" "}
-              <stop stopColor="#F3F3F3" stopOpacity="0.45"></stop>{" "}
+              <stop stopColor="#F3F3F3" stopOpacity="0.65"></stop>{" "}
               <stop offset="1" stopColor="white" stopOpacity="0"></stop>{" "}
             </radialGradient>
           </defs>

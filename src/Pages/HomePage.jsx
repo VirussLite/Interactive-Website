@@ -8,10 +8,10 @@ const HomePage = () => {
     <>
       <Hero />
       <CardStack />
-      <section className="w-full h-[26vw] mt-20  flex justify-start">
+      <section className="w-full h-[26vw] mt-20  bg-transparent flex justify-start">
         <div className="h-full w-1/6 flex justify-start items-start">
           <svg
-            stroke="black"
+            // stroke="black"
             strokeWidth="1.6"
             fill="white"
             width={32}
@@ -23,7 +23,7 @@ const HomePage = () => {
           </svg>
         </div>
         <div className="h-full w-5/6 border-b-2 border-white">
-          <div className="w-1/4 tracking-wide h-full flex flex-col gap-7 justify-center">
+          <div className="w-1/4 tracking-wide h-full flex flex-col gap-7 justify-center mix-blend-difference">
             <h2 className="text-stone-700 text-[.7rem]">
               THINGS I <span className="text-stone-700 italic">CAN</span> HELP
               YOU <br /> WITH. <br />

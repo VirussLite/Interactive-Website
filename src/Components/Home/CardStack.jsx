@@ -54,7 +54,6 @@ const CardStack = () => {
         start: "-400px top",
         end: "top top",
         scrub: true,
-        markers: true,
       },
       opacity: 1,
       x: "-20px",
@@ -63,7 +62,7 @@ const CardStack = () => {
   });
   return (
     <section className="w-full  relative cardStackContainer">
-      <div className="w-full text-4xl tracking-tighter p-20 ">
+      <div className="w-full text-4xl tracking-tighter p-20">
         <h2 className="opacity-0 scale-[.8]">
           I AM ABHINAV, I<br />
           CREATE

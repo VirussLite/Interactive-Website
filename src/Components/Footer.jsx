@@ -39,9 +39,15 @@ const Footer = () => {
       data-scroll
       className="flex flex-col justify-center items-center  max-h-[140vh] gap-32 pt-28 overflow-hidden relative"
     >
-      <div className="w-1/2 text-[5.8vw]  text-center leading-none">
-        <h1>
-          LET'S TALK <br /> ABOUT THE NEXT <br /> BIG THING
+      <div
+        data-scroll-container
+        className="w-1/2 text-[5.8vw]  text-center leading-none"
+      >
+        <h1 data-scroll data-scroll-speed="-.22">
+          LET'S TALK <br /> ABOUT THE NEXT <br />{" "}
+          <h1 data-scroll data-scroll-speed=".02">
+            BIG THING
+          </h1>
         </h1>
       </div>
       <div className="flex  justify-evenly  w-full">
@@ -61,7 +67,11 @@ const Footer = () => {
           <span className="z-20 relative"> Discuss Project</span>
         </button>
       </div>
-      <div className="w-full flex justify-evenly items-start">
+      <div
+        data-scroll
+        data-scroll-section
+        className="w-full flex justify-evenly items-start"
+      >
         {[
           { name: "Behance", id: "behance_jha" },
           { name: "Instagram", id: "insta_jha" },
@@ -73,7 +83,7 @@ const Footer = () => {
               key={item.id}
               className="flex justify-between items-center border-t-[1px] border-white py-2 w-1/6 footer_desc relative"
             >
-              <div>
+              <div data-scroll data-scroll-speed=".04">
                 <h1 className="text-2xl font-bold z-10 relative">
                   {item.name}
                 </h1>
@@ -81,7 +91,11 @@ const Footer = () => {
                   {item.id}
                 </p>
               </div>
-              <div className="rounded-full overflow-hidden bg-black  cursor-pointer">
+              <div
+                data-scroll
+                data-scroll-speed=".04"
+                className="rounded-full overflow-hidden bg-black  cursor-pointer"
+              >
                 {item.name === "Behance" && (
                   <FaBehance
                     size={32}
