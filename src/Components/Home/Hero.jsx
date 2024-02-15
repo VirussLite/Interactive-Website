@@ -17,7 +17,11 @@ const Hero = () => {
 
   return (
     <section className="h-[90vh] relative">
-      <div data-scroll-container className="flex items-center  justify-evenly">
+      <div
+        data-scroll-container
+        className="flex items-center  justify-evenly"
+        id="heading"
+      >
         <h1
           data-scroll
           data-scroll-speed=".5"
@@ -25,7 +29,10 @@ const Hero = () => {
         >
           Creative
         </h1>
-        <div className="flex text-[.8rem] w-1/2 justify-evenly pb-9 gap-12 font-[200]">
+        <div
+          className="flex text-[.8rem] w-1/2 justify-evenly pb-9 gap-12 font-[200]"
+          id="heading"
+        >
           <p>
             Currently Available <em className="text-gray-500">For</em>
             <br /> FREELANCE WORLDWIDE
@@ -35,7 +42,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-end items-end -mt-[5vw] gap-6">
+      <div className="flex justify-end items-end -mt-[5vw] gap-6" id="heading">
         <div>
           <div className="text-[9vw]">
             <p

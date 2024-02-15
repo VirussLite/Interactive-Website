@@ -53,7 +53,11 @@ const Cards = () => {
         data-scroll-speed=".05"
         className="m-36 flex justify-center items-center"
       >
-        <div className="w-full flex justify-between items-center mix-blend-difference">
+        <div
+          scr
+          className="w-full flex justify-between items-center mix-blend-difference"
+          id="feat"
+        >
           <h1 className="text-9xl">
             Feat Wo
             <em className="text-[#14CF93]">r</em>

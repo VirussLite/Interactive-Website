@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center pt-10 px-14 fixed top-0 w-full z-[99]">
       <h3 className="bg-transparent text-[12px] font-[100] uppercase cursor-pointer relative overflow-hidden">
-        Abhisek Jha
+        Home
       </h3>
       <h3 className="bg-transparent text-[12px] font-[100] uppercase cursor-pointer relative overflow-hidden">
         Playwork

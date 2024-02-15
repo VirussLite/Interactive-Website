@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   color: rgb(247, 247, 247);
-  /* background-color: #bababa; */
-  /* background-blend-mode: difference; */
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +27,8 @@ h1 {
   opacity: 1;
   transition: all 1s ease-in-out;
 }
-/* section * {
-  background-color: transparent;
-} */
+.is_loading {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
