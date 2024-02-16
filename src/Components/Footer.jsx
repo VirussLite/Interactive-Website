@@ -45,9 +45,9 @@ const Footer = () => {
       >
         <h1 data-scroll data-scroll-speed="-.22">
           LET'S TALK <br /> ABOUT THE NEXT <br />{" "}
-          <h1 data-scroll data-scroll-speed=".02">
+          <span data-scroll data-scroll-speed=".03" className=" inline-block">
             BIG THING
-          </h1>
+          </span>
         </h1>
       </div>
       <div className="flex  justify-evenly  w-full">

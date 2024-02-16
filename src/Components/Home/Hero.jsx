@@ -43,16 +43,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-end items-end -mt-[5vw] gap-6" id="heading">
-        <div>
-          <div className="text-[9vw]">
-            <p
-              data-scroll
-              data-scroll-speed=".2"
-              className="text-[#14CF93] skew-x-[-20deg]"
-            >
-              visual
-            </p>
-          </div>
+        <div
+          dats-scroll
+          data-scroll-speed="-.1"
+          className="text-[9vw] skew-x-[-15deg]"
+        >
+          <p className="text-[#14CF93]">visual</p>
         </div>
         <div className="leading-none">
           <h1

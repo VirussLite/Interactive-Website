@@ -108,7 +108,7 @@ footer {
 footer div > button::after {
   content: "";
   position: absolute;
-  top: var(--y);
+  top: 50%;
   left: var(--x);
   width: 0px;
   height: 0px;

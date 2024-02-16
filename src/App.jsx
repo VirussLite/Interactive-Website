@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import HomePage from "./Pages/HomePage";
 import { useEffect, useRef, useState } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import "./locomotive.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -23,6 +22,10 @@ function App() {
     return () => {
       scroll.destroy();
     };
+  });
+
+  useEffect(() => {
+    console.log("ok");
   });
 
   window.addEventListener("load", () => window.scrollTo(0, 0));
